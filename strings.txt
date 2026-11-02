@@ -1,0 +1,24 @@
+==================================================
+> ACM Digital Library
+==================================================
+
+(Title:("oil and gas" OR "oil & gas" OR "gas and oil" OR "gas & oil") OR Abstract:("oil and gas" OR "oil & gas" OR "gas and oil" OR "gas & oil") OR Keyword:("oil and gas" OR "oil & gas" OR "gas and oil" OR "gas & oil")) AND (Title:("occupational safety" OR "workplace safety" OR "worker safety" OR "process safety" OR "industrial safety" OR "safety risk*" OR "occupational risk*" OR "accident prevention" OR "accident prediction" OR "accident risk*" OR "risk prediction" OR "occupational accident*" OR "workplace accident*" OR "occupational injur*" OR "workplace injur*" OR "unsafe behavior" OR "unsafe act*") OR Abstract:("occupational safety" OR "workplace safety" OR "worker safety" OR "process safety" OR "industrial safety" OR "safety risk*" OR "occupational risk*" OR "accident prevention" OR "accident prediction" OR "accident risk*" OR "risk prediction" OR "occupational accident*" OR "workplace accident*" OR "occupational injur*" OR "workplace injur*" OR "unsafe behavior" OR "unsafe act*") OR Keyword:("occupational safety" OR "workplace safety" OR "worker safety" OR "process safety" OR "industrial safety" OR "safety risk*" OR "occupational risk*" OR "accident prevention" OR "accident prediction" OR "accident risk*" OR "risk prediction" OR "occupational accident*" OR "workplace accident*" OR "occupational injur*" OR "workplace injur*" OR "unsafe behavior" OR "unsafe act*")) AND (Title:("artificial intelligence" OR "machine learning" OR "deep learning" OR "data mining" OR "data-driven" OR "data science") OR Abstract:("artificial intelligence" OR "machine learning" OR "deep learning" OR "data mining" OR "data-driven" OR "data science") OR Keyword:("artificial intelligence" OR "machine learning" OR "deep learning" OR "data mining" OR "data-driven" OR "data science"))
+
+==================================================
+> IEEE Xplore
+==================================================
+
+("oil and gas" OR "oil & gas" OR "gas and oil" OR "gas & oil") AND ("occupational safety" OR "workplace safety" OR "worker safety" OR "process safety" OR "industrial safety" OR "safety risk*" OR "occupational risk*" OR "accident prevention" OR "accident prediction" OR "accident risk*" OR "risk prediction" OR "occupational accident*" OR "workplace accident*" OR "occupational injur*" OR "workplace injur*" OR "unsafe behavior" OR "unsafe act*") AND ("artificial intelligence" OR "machine learning" OR "deep learning" OR "data mining" OR "data-driven" OR "data science")
+
+==================================================
+> Scopus
+==================================================
+
+TITLE-ABS-KEY ( ( "oil and gas" OR "oil & gas" OR "gas and oil" OR "gas & oil" ) AND ( "occupational safety" OR "workplace safety" OR "worker safety" OR "process safety" OR "industrial safety" OR "safety risk*" OR "occupational risk*" OR "accident prevention" OR "accident prediction" OR "accident risk*" OR "risk prediction" OR "occupational accident*" OR "workplace accident*" OR "occupational injur*" OR "workplace injur*" OR "unsafe behavior" OR "unsafe act*" ) AND ( "artificial intelligence" OR "machine learning" OR "deep learning" OR "data mining" OR "data-driven" OR "data science" ) )
+
+==================================================
+> Web of Science
+==================================================
+
+TS=(("oil and gas" OR "oil & gas" OR "gas and oil" OR "gas & oil") AND ("occupational safety" OR "workplace safety" OR "worker safety" OR "process safety" OR "industrial safety" OR "safety risk*" OR "occupational risk*" OR "accident prevention" OR "accident prediction" OR "accident risk*" OR "risk prediction" OR "occupational accident*" OR "workplace accident*" OR "occupational injur*" OR "workplace injur*" OR "unsafe behavior" OR "unsafe act*") AND ("artificial intelligence" OR "machine learning" OR "deep learning" OR "data mining" OR "data-driven" OR "data science"))
+

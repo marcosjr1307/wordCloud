@@ -1,0 +1,26 @@
+ID,author,year,title,num_terms,extracted_terms
+2,Tang et al.,2025,Analysis of Oil and Gas Pipeline Accidents Based on 24Model and Apriori Algorithm,7,Oil And Gas; Analysis; Pipeline; Accident; Model; Apriori; Algorithm
+3,Obasi and Benson,2025,An explainable machine learning framework for predicting injury severity in extractive industry accidents,9,Machine Learning; Explainable; Framework; Predicting; Injury; Severity; Extractive; Industry; Accident
+4,Sattari et al.,2021,Application of Bayesian network and artificial intelligence to reduce accident/incident rates in oil & gas companies,9,Artificial Intelligence; Bayesian Network; Oil And Gas; Application; Reduce; Accident; Incident; Rate; Company
+6,Agusalim et al.,2023,Artificial Intelligence Solutions In Managing HSE Risks and Incidents,6,Artificial Intelligence; Solution; Managing; HSE; Risk; Incident
+7,Gessoni et al.,2019,Automated Supervision of Personal Protective Equipment Usage,4,PPE; Automated; Supervision; Usage
+8,Ramos et al.,2022,Automatic drowsiness detection for safety-critical operations using ensemble models and EEG signals,8,Drowsiness Detection; Automatic; Safety-Critical; Operation; Ensemble; Model; EEG; Signal
+10,Gong et al.,2021,Deep Learning Based Protective Equipment Detection on Offshore Drilling Platform,6,PPE; Deep Learning; Detection; Offshore; Drilling; Platform
+11,Nartey et al.,2025,Determination of Occupational Fatigue Detection Thresholds Using Naturalistic Fatigue Datasets,8,Determination; Occupational; Fatigue; Detection; Threshold; Naturalistic; Fatigue; Datasets
+16,Sia et al.,2024,Effective Risk Management Through Data-Driven HSE Assurance Program for Safe Execution Project Delivery,8,Risk Management; Data-Driven; HSE; Program; Safe; Execution; Project; Delivery
+18,Johnson et al.,2025,Enhancing procedure quality: Advanced language tools for identifying ambiguity and high-potential violation triggers,11,Enhancing; Procedure; Quality; Advanced; Language; Tool; Identifying; Ambiguity; High-Potential; Violation; Trigger
+19,Kazbekova et al.,2024,Enhancing Safety Data Analysis Through Machine Learning Models,6,Machine Learning; Enhancing; Safety; Data; Analysis; Model
+23,Gangadhari et al.,2024,From unstructured accident reports to a hybrid decision support system for occupational risk management: The consensus converging approach,9,Decision Support; Risk Management; Unstructured; Accident; Report; Hybrid; Occupational; Consensus; Converging
+27,Tian et al.,2026,Improved YOLOv8-Based Real-Time Detection Method for Illegal Behaviors in Oil and Gas High-Risk Operations,9,Oil And Gas; Real-Time; High-Risk; Improved; Yolov8-Based; Detection; Illegal; Behavior; Operation
+28,Cheng et al.,2024,Integrating Knowledge Graphs for Enhanced Drilling Accident Retrieval and Risk Prediction in China's Oil and Gas Industry,10,Oil And Gas; Knowledge Graph; Integrating; Enhanced; Drilling; Accident; Retrieval; Risk; Prediction; China
+32,Tang et al.,2024,Real-time Detection of Safety Helmet and Workwear Based on YOLOv7,5,Helmet; Real-Time; Detection; Workwear; YOLOv7
+33,Thiruchelvam et al.,2022,Wearable Technology for the Improvement of HSE Management,5,Wearable; Technology; Improvement; HSE; Management
+34,Jia et al.,2025,Research on Unmanned Aerial Vehicle Intelligent Inspection System Based on Multi Algorithm Fusion,9,Unmanned; Aerial; Vehicle; Intelligent; Inspection; System; Multi; Algorithm; Fusion
+37,Danis,2019,Saving Lives with Statistics - An Introduction to Data Science in Workplace Safety,7,Occupational Safety; Saving; Life; Statistic; Introduction; Data; Science
+39,Bhatti et al.,2024,Transforming Petrochemical Safety Using a Multimodal AI Visual Analyzer,7,Artificial Intelligence; Transforming; Petrochemical; Safety; Multimodal; Visual; Analyzer
+40,Wang et al.,2026,Research on Image Data Mining and Automated Annotation Methods for Safety Monitoring in the Petroleum Industry Based on Agent Collaboration,9,Oil And Gas; Data Mining; Image; Automated; Annotation; Safety; Monitoring; Agent; Collaboration
+41,Fortunato et al.,2023,Optimizing Industrial Risk Management Through AI and No-Code Platform: A Global Solution for the Oil and Gas Industry,9,Oil And Gas; Risk Management; Artificial Intelligence; Optimizing; Industrial; No-Code; Platform; Global; Solution
+42,Milana et al.,2019,Natural Language Understanding for Safety and Risk Management in Oil and Gas Plants,5,Natural Language Processing; Risk Management; Oil And Gas; Safety; Plant
+44,Lins et al.,2024,Quantum machine learning for drowsiness detection with EEG signals,5,Drowsiness Detection; Machine Learning; Quantum; EEG; Signal
+45,Sanchez-Pi et al.,2014,An information fusion framework for context-based accidents prevention,6,Information; Fusion; Framework; Context-Based; Accident; Prevention
+47,Revisan et al.,2015,Big Data Visualization for Occupational Health and Security Problem in Oil and Gas Industry,7,Oil And Gas; Big Data; Visualization; Occupational; Health; Security; Problem

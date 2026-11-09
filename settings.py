@@ -20,6 +20,17 @@ TITLE_COUNTS_CSV = "output/title_counts.csv"
 TITLE_BY_ARTICLE_CSV = "output/title_por_artigo.csv"
 RESULTS_TITLE_DIR = "resultados_wordcloud/title_resultados"
 
+ABSTRACT_NO_SEARCH_COUNTS_CSV = "output/abstract_sem_busca_counts.csv"
+ABSTRACT_NO_SEARCH_BY_ARTICLE_CSV = "output/abstract_sem_busca_por_artigo.csv"
+RESULTS_ABSTRACT_NO_SEARCH_DIR = "resultados_wordcloud/abstract_sem_busca_resultados"
+
+TITLE_NO_SEARCH_COUNTS_CSV = "output/title_sem_busca_counts.csv"
+TITLE_NO_SEARCH_BY_ARTICLE_CSV = "output/title_sem_busca_por_artigo.csv"
+RESULTS_TITLE_NO_SEARCH_DIR = "resultados_wordcloud/title_sem_busca_resultados"
+
+COMBINED_NO_SEARCH_COUNTS_CSV = "output/combinado_sem_busca_counts.csv"
+RESULTS_COMBINED_NO_SEARCH_DIR = "resultados_wordcloud/combinado_sem_busca_resultados"
+
 MASKS_DIR = "masks"
 HELMET_MASK_PATH = "masks/helmet_mask.png"
 
@@ -80,6 +91,14 @@ FIGURE = {
     "random_state": 42,             
     "mask_contour_width": 1.8,
     "mask_contour_color": "#A6CEE4",
+    "custom_palette": [
+        "#66b58c",  # Verde suave (termos de frequência 1)
+        "#2e9963",  # Verde médio-claro
+        "#008542",  # Verde principal mais claro (da paleta do grupo)
+        "#007b3d",  # Verde principal mais escuro (da paleta do grupo)
+        "#004d26",  # Verde profundo (destaque para o topo de frequência)
+    ],
+    "helmet_contour_color": "#7ac19b",
 }
 COMPOUND_TERMS = {
     "Oil And Gas": [
@@ -139,4 +158,72 @@ CUSTOM_STOPWORDS = {
     "identify", "identified", "identifies", "subject", "subjects", "key", "area",
     "areas", "mean", "means", "develop", "developed", "developing", "main",
     "petronas", "assurance",
+}
+
+# Expressões e termos da string de busca (strings.txt) a remover dos Abstracts e Títulos
+SEARCH_PHRASES_REGEX = [
+    r"oil\s+and\s+gas\s+industry",
+    r"oil\s*&\s*gas\s+industry",
+    r"oil\s+and\s+gas",
+    r"oil\s*&\s*gas",
+    r"gas\s+and\s+oil",
+    r"gas\s*&\s*oil",
+    r"occupational\s+safety",
+    r"workplace\s+safety",
+    r"worker\s+safety",
+    r"process\s+safety\s+management",
+    r"process\s+safety",
+    r"industrial\s+safety",
+    r"safety\s+risk\w*",
+    r"occupational\s+risk\w*",
+    r"accident\s+prevention",
+    r"accident\s+prediction",
+    r"accident\s+risk\w*",
+    r"risk\s+prediction",
+    r"occupational\s+accident\w*",
+    r"workplace\s+accident\w*",
+    r"occupational\s+injur\w*",
+    r"workplace\s+injur\w*",
+    r"unsafe\s+behavior\w*",
+    r"unsafe\s+act\w*",
+    r"artificial\s+intelligence",
+    r"machine\s+learning",
+    r"deep\s+learning",
+    r"data\s+mining",
+    r"data-driven",
+    r"data\s+driven",
+    r"data\s+science",
+]
+
+# Termos normalizados (e radicais da string de busca) removidos após a extração em Abstracts/Títulos
+TEXT_SEARCH_TERMS_REMOVE = {
+    "Oil And Gas",
+    "Oil",
+    "Gas",
+    "Petroleum",
+    "Petrochemical",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Deep Learning",
+    "Data Mining",
+    "Data-Driven",
+    "Data Science",
+    "Intelligence",
+    "Intelligent",
+    "Safety",
+    "Safe",
+    "Safety-Critical",
+    "Occupational Safety",
+    "Process Safety",
+    "Occupational",
+    "Workplace",
+    "Accident",
+    "Risk",
+    "Prediction",
+    "Predicting",
+    "Predict",
+    "Prevention",
+    "Prevent",
+    "Injury",
+    "Unsafe",
 }

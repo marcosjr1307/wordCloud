@@ -55,6 +55,27 @@ def make_frequency_color_func(
     return color_func
 
 
+def make_custom_palette_color_func(
+    frequencies: dict[str, int],
+    palette: list[str],
+):
+    """Cria um degradê monocromático suave de verdes ancorado em #008542 e #007b3d."""
+    cmap = mpl.colors.LinearSegmentedColormap.from_list("custom_greens", palette)
+    counts = list(frequencies.values())
+    min_c, max_c = min(counts), max(counts)
+
+    def color_func(word, font_size, position, orientation, random_state=None, **kwargs):
+        c = frequencies.get(word, min_c)
+        if max_c > min_c:
+            norm = ((c - min_c) / (max_c - min_c)) ** 0.60
+        else:
+            norm = 1.0
+        r, g, b, _ = cmap(norm)
+        return f"rgb({int(r * 255)}, {int(g * 255)}, {int(b * 255)})"
+
+    return color_func
+
+
 def create_ellipse_mask(width: int = 2200, height: int = 1200) -> np.ndarray:
     y, x = np.ogrid[:height, :width]
     cy, cx = height / 2.0, width / 2.0
@@ -322,6 +343,10 @@ def main() -> int:
     saved_helmet = []
     helmet_path = Path(cfg.HELMET_MASK_PATH)
     if helmet_path.exists():
+        helmet_color_func = make_custom_palette_color_func(
+            frequencies,
+            fig_cfg["custom_palette"],
+        )
         helmet_mask, helmet_field = load_external_mask(str(helmet_path), target_size=2048)
         wc_helmet = WordCloud(
             width=helmet_mask.shape[1],
@@ -338,7 +363,7 @@ def main() -> int:
             random_state=fig_cfg["random_state"],
             collocations=False,
         ).generate_from_frequencies(frequencies)
-        wc_helmet.recolor(color_func=color_func)
+        wc_helmet.recolor(color_func=helmet_color_func)
 
         saved_helmet = save_wordcloud_figure(
             wc_helmet,
@@ -348,7 +373,7 @@ def main() -> int:
             dpi=fig_cfg["dpi"],
             bg_color=fig_cfg["background_color"],
             contour_field=helmet_field,
-            outline_color=fig_cfg["mask_contour_color"],
+            outline_color=fig_cfg["helmet_contour_color"],
             outline_lw=fig_cfg["mask_contour_width"],
         )
 
